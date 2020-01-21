@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-picker",
+  "version": "1.0.0",
+  "description": "Cordova plugin for sharing text using the built-in app picker",
+  "cordova": {
+    "id": "cordova-plugin-picker",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "android",
+    "share",
+    "pick",
+    "app",
+    "intent",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "SkeDoodle",
+  "license": "Apache 2.0",
+  "repository": {
+    "url": "https://github.com/SkeDoodle/cordova-plugin-picker"
+  }
+}

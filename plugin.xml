@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-picker" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Cordova Plugin Picker</name>
+    <description>Cordova plugin for sharing text using the built-in app picker</description>
+    <license>Apache 2.0</license>
+    <keywords>android, share, pick, app, intent</keywords>
+
+    <engines>
+      <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module name="CordovaPluginPicker" src="www/CordovaPluginPicker.js">
+        <clobbers target="CordovaPluginPicker" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Picker">
+                <param name="android-package" value="com.skedoodle.cordova.plugin.picker.Picker" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Picker.java" target-dir="src/com/skedoodle/cordova/plugin/picker" />
+    </platform>
+</plugin>
